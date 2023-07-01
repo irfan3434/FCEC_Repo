@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 1.75em;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 10px;
+    flex-wrap: wrap; /* This is important so sections can wrap to the next line */
+}
+
+/* Styles for sections - chicken, beef and sushi */
+
+div.chicken, div.beef, div.sushi {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: auto;
+    background-color: gray;
+    margin-top: 29px;
+}
+
+div.chicken>h2, div.beef>h2, div.sushi>h2 {
+    border: 2px solid black;
+    margin-top: 0px;
+    font-family: cursive;
+    font-size: 1.25em; /* 25% larger than the base font size */
+    padding: 3px 28px 3.5px 28px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 0px;
+}
+
+div.chicken>p, div.beef>p, div.sushi>p {
+    padding: 0px 10px 5px 10px;
+    font-family: cursive;
+    margin-top: 5px;
+}
+
+/* Additional styling for beef and sushi sections */
+div.chicken>h2 {
+    color: black;
+    background-color: rgb(199, 130, 130);
+}
+
+div.beef>h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(128, 43, 43);
+}
+
+div.sushi>h2 {
+    color: black;
+    background-color: rgba(247, 232, 193, 0.884);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 767px) {
+    .chicken, .beef, .sushi {
+        flex: 0 0 95%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .chicken, .beef {
+        flex: 0 0 48%;
+    }
+    .sushi {
+        flex: 0 0 98%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .chicken, .beef, .sushi {
+        flex: 0 0 31.33%;
+    }
+}

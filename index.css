@@ -11,11 +11,13 @@ body {
 }
 
 form {
-    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
 }
 
 
@@ -115,6 +117,7 @@ input[type="checkbox"] {
     appearance: none;
     display: inline-block;
     width: 15px;
+    cursor: pointer;
     height: 15px;
     padding: 4px;
     background-clip: content-box;
@@ -174,13 +177,66 @@ legend {
     font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .scale, .radio-group, .checkbox-group {
-        flex-direction: column;
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px; /* Reduced padding for smaller screens */ 
+        background-image: none !important;
+        background-color: #ffffff;     
     }
 
-    .scale span, .radio-group label, .checkbox-group label {
-        margin-bottom: 10px;
+    form {
+        padding: 15px; /* Slightly reduce form padding */
+        margin: 10px; /* Add margin to avoid edge-to-edge display */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Less pronounced shadow */
+    }
+
+    .input-group {
+        margin-bottom: 20px; /* Reduce margin between groups */
+    }
+
+    .credentials,
+    input[type="text"],
+    button,
+    .scale span,
+    label {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    input[type="text"] {
+        padding: 8px; /* Reduce padding in input fields */
+    }
+
+    .question {
+        margin-bottom: 20px; /* Less margin for questions */
+    }
+
+    .scale {
+        flex-direction: column; /* Stack scale elements vertically */
+        margin: 20px 0; /* Adjust margin for scale */
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column; /* Align radio buttons and checkboxes vertically */
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+        padding: 5px 10px; /* Adjust padding for labels */
+    }
+
+    fieldset {
+        padding: 10px; /* Reduce padding in fieldset */
+    }
+
+    legend {
+        font-size: 14px; /* Adjust font size for legends */
     }
 }
+
+/* Additional adjustments can be made based on specific needs and testing on various devices. */
+
+

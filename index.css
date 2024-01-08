@@ -1,0 +1,186 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 250px 300px;
+    color: #333;
+    font-size: 16px;
+    background-image: url('/\ 1الشعار\ \ المعتمد\ فقط.webp');
+    background-size: cover; /* Cover ensures that the background covers the entire area */
+    background-position: center; /* Align the image nicely */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.credentials {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+    opacity: 1;
+}
+
+
+label {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0069d9;
+    transform: scale(1.05);
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.scale label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scale span {
+    flex: 1;
+    text-align: center;
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 4px;
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    cursor: pointer;
+    padding: 2px 4px; 
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: #fff;
+    background-color: #007bff;
+}
+
+form h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    opacity: 1;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scale, .radio-group, .checkbox-group {
+        flex-direction: column;
+    }
+
+    .scale span, .radio-group label, .checkbox-group label {
+        margin-bottom: 10px;
+    }
+}

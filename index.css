@@ -4,7 +4,7 @@ body {
     padding: 250px 300px;
     color: #333;
     font-size: 16px;
-    background-image: url('FCECA4.webp');
+    background-image: url('FCECA4.webp') !important;
     background-size: cover; /* Cover ensures that the background covers the entire area */
     background-position: center; /* Align the image nicely */
     background-repeat: no-repeat; /* Prevent the image from repeating */

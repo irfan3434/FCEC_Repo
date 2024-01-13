@@ -2,11 +2,13 @@ body {
     box-sizing: border-box;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 50px; /* Reduced padding */
+    padding: 50px;
+    /* Reduced padding */
     color: #000;
     font-size: 16px;
     background-image: url('Letter.webp');
-    background-size: cover; /* Changed to cover */
+    background-size: cover;
+    /* Changed to cover */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -17,8 +19,10 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Full width on smaller screens */
-    max-width: 600px; /* Maximum width */
+    width: 100%;
+    /* Full width on smaller screens */
+    max-width: 600px;
+    /* Maximum width */
     margin: auto;
     box-sizing: border-box;
     opacity: 0.9;
@@ -138,8 +142,8 @@ input[type="checkbox"]:checked {
     transition: all 0.3s ease;
 }
 
-input[type="radio"]:checked + label,
-input[type="checkbox"]:checked + label {
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
     color: #fff;
     background-color: #007bff;
 }
@@ -173,41 +177,55 @@ legend {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px; /* Adjusted padding for mobile */
-        background-color: #fff; /* Added background color */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+        padding: 20px;
+        /* Adjusted padding for mobile */
+        background-color: #fff;
+        /* Added background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Added shadow for depth */
         position: absolute;
         width: 100%;
         z-index: 9;
         right: 0;
     }
 
+    form h2 {
+        font-size: 20px;
+    }
+
     .mobile-menu-toggle {
         order: 1;
         display: flex;
         cursor: pointer;
-        width: auto; /* Adjusted width */
+        width: auto;
+        /* Adjusted width */
         justify-content: center;
-        padding: 5px; /* Added padding for touch accessibility */
+        padding: 5px;
+        /* Added padding for touch accessibility */
     }
 
     .header-logo img {
         vertical-align: middle;
-        max-width: 100px; /* Adjusted max-width */
+        max-width: 100px;
+        /* Adjusted max-width */
     }
 
     .nav-menu {
         display: none;
-        width: 100%; /* Full width */
+        width: 100%;
+        /* Full width */
         position: fixed;
         top: 0;
-        left: -100%; /* Off-screen initially */
+        left: -100%;
+        /* Off-screen initially */
         height: 100%;
-        background-color: #f8f8f8; /* Light background color */
+        background-color: #f8f8f8;
+        /* Light background color */
         z-index: 1000;
         overflow-y: auto;
         transition: left 0.3s ease;
-        padding-top: 60px; /* Space for close button */
+        padding-top: 60px;
+        /* Space for close button */
     }
 
     .nav-menu.active {
@@ -215,10 +233,14 @@ legend {
     }
 
     .nav-menu a {
-        color: #333; /* Dark text for readability */
-        padding: 15px 20px; /* More padding for touch targets */
-        font-size: 16px; /* Larger font size */
-        border-bottom: 1px solid #eaeaea; /* Separator for each item */
+        color: #333;
+        /* Dark text for readability */
+        padding: 15px 20px;
+        /* More padding for touch targets */
+        font-size: 16px;
+        /* Larger font size */
+        border-bottom: 1px solid #eaeaea;
+        /* Separator for each item */
     }
 
     .nav-menu--right.active {
@@ -230,13 +252,25 @@ legend {
     }
 
     .close-btn {
-        background-color: #ff6f61; /* Adjusted color */
-        top: 20px; /* Adjusted position */
-        right: 20px; /* Moved to right */
+        background-color: #ff6f61;
+        /* Adjusted color */
+        top: 20px;
+        /* Adjusted position */
+        right: 20px;
+        /* Moved to right */
         position: absolute;
     }
 
     .homepage-video-section {
         margin-bottom: 20px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .scale {
+        flex-direction: column;
     }
 }

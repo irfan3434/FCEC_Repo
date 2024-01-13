@@ -33,7 +33,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         event.target.reset(); // Reset the form after successful submission
     })
     .catch((error) => {
-        console.error('Error:', error);
+        console.log('Error:', error);
         alert('There was an error submitting your form.'); // Show an error message
     });
 });

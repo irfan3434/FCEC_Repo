@@ -48,7 +48,8 @@ form {
     font-weight: bold;
 }
 
-input[type="text"],
+input[type="radio"]
+input[type="number"]
 input[type="radio"],
 input[type="checkbox"] {
     padding: 10px;

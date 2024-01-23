@@ -89,6 +89,7 @@ label {
     display: flex;
     margin-bottom: 8px;
     gap: 10px;
+    font-weight: 700;
 }
 
 .question {

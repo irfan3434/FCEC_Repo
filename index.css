@@ -41,6 +41,13 @@ form {
     font-weight: bold;
 }
 
+.phone-number {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 input[type="text"],
 input[type="radio"],
 input[type="checkbox"] {

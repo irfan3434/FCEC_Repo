@@ -55,6 +55,13 @@ form {
     font-weight: bold;
 }
 
+.company {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 input[type="radio"]
 input[type="number"]
 input[type="radio"],

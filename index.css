@@ -48,6 +48,13 @@ form {
     font-weight: bold;
 }
 
+.email {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 input[type="radio"]
 input[type="number"]
 input[type="radio"],
@@ -60,6 +67,12 @@ input[type="checkbox"] {
 }
 
 input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+input[type="number"]:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
     outline: none;

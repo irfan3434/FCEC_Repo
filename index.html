@@ -13,37 +13,29 @@
 
 <body>
 
-    <form id="feedbackForm" method="post" action="https://formspree.io/f/mkndjqnj">
+    <form id="feedbackForm" method="post" action="http://127.0.0.1:3000/submit-form">
         <h2>FCEC</h2>
         <h2 style="color: #af9011;">Visitor Info</h2>
 
         <div class="input-group">
             <label for="name" class="credentials">Name:</label>
-            <input type="text" id="entry" name="name" required>
+            <input class="entryplace"   type="text" id="name" name="name" required>
         </div>
 
         <div class="input-group">
             <label for="email" class="email">Email:</label>
-            <input type="text" id="entry" name="email" required>
+            <input class="entryplace" type="email" id="email" name="email" required>
         </div>
-        
-        <div class="input-group">
-            <label for="designation" class="designation">Designation:</label>
-            <input type="text" id="entry" name="designation">
-        </div>
-        
+
         <div class="input-group">
             <label for="company" class="company">Company:</label>
-            <input type="text" id="entry" name="Company">
+            <input class="entryplace" type="text" id="company" name="company">
         </div>
-         <div class="input-group">
-            <label for="number" class="phone-number">Number:</label>
-            <input type="number" id="entry" name="employeeId" required>
+
+        <div class="input-group">
+            <label for="phonenumber" class="phone-number">Phone Number:</label>
+            <input class="entryplace" type="text" id="phonenumber" name="phonenumber">
         </div>
-        
-
-
-
 
         <button type="submit">Submit</button>
     </form>

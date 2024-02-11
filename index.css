@@ -68,6 +68,14 @@ form {
     font-weight: bold;
 }
 
+.entryplace {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
 input[type="radio"]
 input[type="number"]
 input[type="radio"],
